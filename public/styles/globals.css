@@ -1,0 +1,53 @@
+html,body {padding: 0;margin: 0;font-family: "Manrope" !important}
+h1, h2, h3, h4, h5, h6, p, button, input, select, span, b, strong, a, div, label {font-family: "Manrope" !important}
+button {text-transform: capitalize !important;box-shadow: none !important}
+a {color: inherit;text-decoration: none}
+* {box-sizing: border-box}
+.model{position: absolute;top: 20%;left: 32%;width: 36%; padding: 60px 40px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background-color: #fff;text-align: center;}
+.model a{color:blue;text-decoration: underline;}
+.model p{margin-top: 20px;}
+.model button{margin-top: 30px;}
+.form-input {width: 100%;}
+.date-pick {position: relative;margin-top: 35px;}
+.date-pick label{font-size: 16px;left: -12px;}
+.date-pick fieldset {border:none; border-bottom:2px solid #333;}
+.date-pick .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {width:100%;border-radius:2px;}
+.date-pick input{padding-left:0;}
+.review_pop{position: absolute;top: 05%;left: 35%;width: 31%; padding: 13px 30px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background-color: #fff;text-align: center;outline: none;font-size: 16px;}
+.review-pop h3{font-size: 16px;font-weight: 600;color: #505050;}
+.review_pop .MuiButtonBase-root{ margin-top: 35px;}
+.button1 {color: #000;}
+.card{ margin: 0}
+.card_info{border-bottom: 1px solid #ddd;margin: 5px 0 20px !important;}
+.fixed{margin: 0;}
+.fixed_info{border-bottom: 1px solid #ddd;margin: 10px 0 10px;}
+.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root{background-color: #fff !important;color:#000 !important}
+.css-kmxb0e-MuiButtonBase-root-MuiButton-root{background-color: #3857ff !important;color:#fff !important;padding: 6px 16px;border-radius: 8px}
+.terms-pop {margin: auto;text-align: center;width: 85%;margin-top: 5%;background: #fff;height: 80%;outline: none;position: relative;padding: 10px}
+.mod {display: inline-block;margin-bottom: -4px;}
+.close {position: absolute;right: 0px;top: -15px;font-size: 20px;background: red;color: #fff;padding: 10px 20px;cursor: pointer}
+.terms{color: #3857ff;font-weight: 500;font-size: 12px;cursor: pointer;text-decoration: underline;text-decoration-color: rgba(25, 118, 210, 0.4)}
+.privacyPolicy{font-weight: 500;font-size: 11px;}
+.css-621s9d-MuiTypography-root{margin-top: 8px;margin-bottom: -8px}
+.fixed_interest p span{font-size: 12px;font-weight: 500;line-height: 1.42;color: #999;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+.css-s51leg-MuiLoadingButton-loadingIndicator{
+  color:#3857ff !important; 
+}
+.css-s51leg-MuiLoadingButton-loadingIndicator span{
+  width: 29px !important;
+  height: 29px !important;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (min-width:768px) and (max-width: 1080px){
+  .review_pop{width: 50%;left: 25%;}
+}
+@media screen and (max-width: 767px){
+  .review_pop{width: 100%;left: 0%;top:auto;bottom:2%;}
+}

@@ -1,0 +1,50 @@
+.pagecontainer{margin: auto;padding: 0 10% 10%;}
+.secureinfo {text-align: center;margin-top: 30px}
+.credit {font-size: 15px;font-weight: 600;text-align: center;color: #ff0049;}
+.dream {font-size: 18px;text-align: center;color: #1a1a1a;font-weight: 600;line-height: 1.44;}
+.carddetail{position: relative;max-width: 708px;margin: 55px auto 0px;display: flex;font-size: 14px;font-weight: 500;color: #6f6f6f;}
+.carddesign{position: relative;width: 50%;padding: 0 10px;margin-bottom: 24px;}
+.cardarea{padding: 0 10px;}
+.fee b{font-size: 18px;color:#1a1a1a;margin-right: 10px;}
+.userdetail{position: relative;width: 50%;padding: 0 10px;}
+.creditoffered {float:left;border-top:1px solid #ddd;border-bottom:1px solid #ddd;width: 100%;}
+.creditoffered p{width: 50%;float:left;font-weight: 600;color: #1a1a1a;}
+.creditlimit {text-align: right;}
+.cibilscore{float: left;position: relative;width: 100%;border-bottom:1px solid #ddd;}
+.cibilscore p{font-weight: 500;color: #000;}
+.cibil{float: left;position: relative;width: 70%;}
+.cibil span{font-size: 14px;color:#999}
+.cscore{float: left;position: relative;width: 30%;}
+.cscore p{text-align: right;}
+.boost{float: left;background-position: center;margin-top: 40px;color: #fff;font-size: 21px;text-align: center;width: 100%;}
+.boost p{background-image: url(../Images/boost-bg.png);background-size: cover;float: left;  padding: 39px 45px;background-position: center;border-radius: 10px;color: #fff;font-size: 21px;text-align: center;width: 100%;margin:0;line-height: 1.38;letter-spacing: -0.42px;}
+.propositions{float: left;position: relative;width: 100%;margin-top: 20px;}
+.propositions p{color: #666;font-size: 14px;font-weight: 500;line-height: 1.86;}
+.propositions ul {padding-left: 0px;font-size: 16px;font-weight: 500;color: #000;margin-bottom: 40px;}
+.propositions ul li {background: url("../Images/group.png") no-repeat 0px 4.5px transparent;list-style: none;margin-top: 18px;padding-left: 24px;line-height: 1.56;}
+
+.securestart{float: left;position: relative;width: 100%;}
+.securestart button{width: 100%; margin: 25px 0px;padding: 16px 0;border-radius: 12px;background-color: #3857ff;}
+
+@media screen and (min-width:768px) and (max-width: 1080px){
+    .carddetail{display: flex;}    
+    
+}
+
+@media screen and (max-width: 767px){
+    .carddetail{display: block;margin: 60px auto 10px;line-height: .8;}    
+    .carddesign{width: 100%;}
+    .userdetail{width: 100%;}
+    .securestart button{position: fixed;bottom: 15px;margin: auto;left: 20px;right: 20px;overflow: hidden; width: 80%;}
+    .securestart{padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .creditoffered{margin-bottom: 30px; margin-top: 20px;} 
+    .creditoffered p{padding-top: 5px; padding-bottom: 5px;}
+   
+    .propositions{margin-bottom: 100px;}
+    .propositions ul li{margin-top: 30px;}
+
+    .boost{margin-top: 70px;}   
+    
+}

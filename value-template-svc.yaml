@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: creditcard
+  namespace: acqui
+spec:
+  selector:
+    matchLabels:
+      app: creditcard
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: creditcard
+    spec:      
+      containers:
+      - name: creditcard
+        image: 483584640083.dkr.ecr.ap-south-1.amazonaws.com/creditcardportal-fe:#{appName}#-#{Build.BuildId}#.#{Build.DefinitionVersion}#
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: creditcard
+  namespace: acqui
+  labels:
+    app: creditcard
+spec:
+  type: ClusterIP
+  ports:
+  - port: 3000
+    targetPort: 3000
+  selector:
+    app: creditcard
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: kong
+    konghq.com/strip-path: "true" 
+  name: creditcard
+  namespace: acqui
+spec:
+  tls:
+  - hosts:
+    - acqui-uat.kotak.internal
+    secretName: acqui-uat
+  rules:
+  - host: acqui-uat.kotak.internal
+    http:
+      paths:
+      - backend:
+          service:
+            name: creditcard
+            port:
+              number: 3000
+        path: /creditcard
+        pathType: Prefix

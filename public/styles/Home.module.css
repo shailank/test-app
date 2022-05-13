@@ -1,0 +1,93 @@
+.container {padding: 0 2rem}
+.main {min-height: 100vh;padding: 4rem 0;flex: 1;display: flex;flex-direction: column;justify-content: center;align-items: center}
+.homeStyle{background: url("../Images/homePage_banner.jpg") ; height: 80vh;display: flex;align-items: center}
+.headerLogo {padding-top: 16px;padding-left: 171px;background-color: #000;}
+.footer {display: flex;flex: 1;padding: 2rem 0;border-top: 1px solid #eaeaea;justify-content: center;align-items: center}
+.footer a {display: flex;justify-content: center;align-items: center;flex-grow: 1}
+.title a {color: #0070f3;text-decoration: none}
+.title a:hover,.title a:focus,.title a:active {text-decoration: underline}
+.title {margin: 0;line-height: 1.15;font-size: 4rem}
+.headtextbelowicon {font-size: 16px;font-weight: 500;color: #fff;line-height: 1.56}
+.title,.description {text-align: center}
+.description {margin: 4rem 0;line-height: 1.5;font-size: 1.5rem}
+.code {background: #fafafa;border-radius: 5px;padding: 0.75rem;font-size: 1.1rem}
+.grid {display: flex;align-items: center;justify-content: center;flex-wrap: wrap;max-width: 800px}
+.card {margin: 1rem;padding: 1.5rem;text-align: left;color: inherit;text-decoration: none;border: 1px solid #eaeaea;border-radius: 10px;transition: color 0.15s ease, border-color 0.15s ease;max-width: 300px}
+.card:hover,.card:focus,.card:active {color: #0070f3;border-color: #0070f3}
+.card h2 {margin: 0 0 1rem 0;font-size: 1.5rem}
+.card p {margin: 0;font-size: 1.25rem;line-height: 1.5}
+.logo {height: 1em;margin-left: 0.5rem}
+.css-wewmay {margin: 40px !important}
+.text {width: 451px;height: 119px;margin: 104.9px 0 17px;font-size: 45px;font-weight: bold;line-height: 1.27;letter-spacing: -0.9px;text-align: left;color: #000}
+.plaintxt {width: 384px;height: 74px;margin: 17px 67px 11px 0;font-size: 16px;font-weight: 500;line-height: 1.63;letter-spacing: normal;text-align: left;color: #666}
+.Keypropositions {font-size: 18px;font-weight: 600;margin-top: 103px;color: #ff0049;text-align: center;margin-bottom: 0px;letter-spacing: normal}
+.Smartspendersthisway {font-size: 32px;font-weight: bold;text-align: center;color: #000;margin-top: 10px;margin-bottom: 50px;letter-spacing: normal}
+.img1 {height: 81px;object-fit: contain}
+.header {font-size: 22px;font-weight: 600 !important;line-height: 1.18;color: #000;margin: 28px auto 10px}
+.textbelowicon {font-size: 18px;font-weight: 500;color: #666666;line-height: 1.75}
+.Cardnumber {font-size: 36px;font-weight: 600;line-height: 0.72;letter-spacing: normal;color: #ff0049;margin-top: 0px;margin-bottom: 36px;}
+.cardHeading {font-size: 22px;font-weight: 600;color: #383838;line-height: 1.45;min-height: 58px}
+.cardtext{font-size: 18px;font-weight: 500;line-height: 1.56;color: #666;letter-spacing: normal}
+.blackContainer {font-size: 32px;font-weight: bold;line-height: 1.38;letter-spacing: -0.64px;color:#fff;margin-right: 42px}
+.blackContainersubtext {opacity: 0.8;font-size: 18px;font-weight: 500;line-height: 1.56;letter-spacing: normal;color: #fff}
+.YourCreditCardAwaitsYou {font-size: 45px;font-weight: bold;line-height: 1.27;letter-spacing: -0.9px;text-align: center;color: #fff}
+.claimButton {width: 215px;height: 54px;margin: 30px 236px 0 0;padding: 16px 42px 16px 43px;border-radius: 12px;background-color: #3857ff;color:white}
+.Keypropreasons{font-size: 18px;font-weight: 600;margin-top: 50px;color: #ff0049;text-align: center;margin-bottom: 0px;letter-spacing: normal;line-height: 1.38}
+.Makelifesimpler {font-size: 32px;font-weight: bold;text-align: center;color: #000;margin-top: 10px;margin-bottom: 50px;letter-spacing: normal}
+.ReasonstogetCreditCard {width: 462px;height: 24px;font-size: 18px;font-weight: 600;letter-spacing: normal;text-align: center;color: #ff0049}
+.Claimyourcreditcard {font-size: 32px;font-weight: bold;line-height: 1.38;letter-spacing: -0.64px;color: #000;margin-right: 65px}
+.whiteContainersubtext {font-size: 18px;font-weight: 500;line-height: 1.56;letter-spacing: normal;color: #666}
+.px170 {padding-left: 170px;padding-right: 170px}
+.cardData {border: 1px solid #e2e2e2;border-radius: 14px;padding: 40px 28px 46px;height: 100%}
+.inlinePadding {padding-left: 91px;padding-right: 91px}
+.bggrey {width: 408px;height: 51px;margin: 14px 21px 0 20px;font-family: Manrope;font-size: 11px;font-weight: 500;font-stretch: normal;font-style: normal;line-height: 1.64;letter-spacing: normal;text-align: center;color: #8b8b8b}
+.crossButton{position: absolute;right: 24px;top: 12px;font-size: 20px;color: #999;cursor: pointer}
+.whitecardTextPadding {text-align: left;padding: 33px 20px 50px 110px}
+.assetImage {width: 300px;height: 300px}
+.blackcardTextPadding {padding:10rem 1rem 1rem 5rem;}
+.inputStyle {width: 40px !important;height: 72px;margin: 0 0.5rem;font-size: 2rem;border-radius: 20px;border: 1px solid #cccccc}
+.disabledLink {pointer-events: none;color:#666}
+.enabledLink{color:#3857ff}
+.eligibilityButton {border: 1px solid #3857ff;background-color: #3857ff;border-radius: 15px;width: 100%;height: 54px;font-size: 16px;font-weight: 600;color: #fff;margin-top: 38px;margin-bottom: 90px;padding-top: 16px;padding-bottom: 16px}
+.itemDataStyle{margin-right: 60px;margin-bottom: 93px;}
+.mtspace{margin-top: 120px}
+.assetStyle {background-color: #e5f3fa;display: flex;margin-top: 126px;border-radius: 14px;padding-top: 80px;margin-bottom: 60px;padding-bottom: 20px;text-align: right}
+@media screen and (min-width:768px) and (max-width: 1080px) {
+  .Claimyourcreditcard {padding: 50px 80px 0px 40px;font-size: 20px}
+  .whitecardTextPadding {padding:  50px 50px 0px}
+  .assetImage {height: 400px;width: 400px}
+  .blackcardTextPadding{padding: 50px 50px 0px}
+  .blackContainer {font-size: 20px;font-weight: bold;line-height: 1.38;letter-spacing: -0.64px;text-align: right;color:#fff}
+}
+@media screen and (max-width: 768px) {
+  .homeStyle{align-items: flex-start;padding-top: 80px;background: url("../Images/banner_mobile.jpg"); height: 625px;}
+  .headerLogo {padding-top: 5px;padding-left: 25px}
+  .inputStyle {width: 36px !important;height: 60px;margin: 0 0.4rem;font-size: 1.5rem}
+  .Smartspendersthisway {font-size: 24px;text-align: left;margin-bottom: 40px; font-weight: ;}
+  .blackcardTextPadding {padding: 50px 31px;margin-top: -50px}
+  .whitecardTextPadding {padding: 0px 31px 25px}
+  .inlinePadding {padding-left: 25px;padding-right: 25px}
+  .YourCreditCardAwaitsYou {font-size: 30px;color: #fff}
+  .Keypropositions {font-size: 18px;font-weight: 600;color: #ff0049;text-align: left;margin-top: 74px}
+  .Claimyourcreditcard {margin: 4px 30px 26px 0px;font-size: 24px;line-height: 1.42;letter-spacing: normal;text-align: left}
+  .px170 {padding-left: 25px;padding-right: 25px}
+  .px25 {padding-left: 25px;padding-right: 25px}
+  .blackContainer {font-size: 24px;line-height: 1.42;letter-spacing: normal;color:  #fff}
+  .whiteContainersubtext {font-size: 16px;font-weight: normal;color: #505050}
+  .blackContainersubtext {font-size: 16px;font-weight: normal;letter-spacing: normal;margin-top: 26px}
+  .assetImage {height: 260px;}
+  .mtspace{margin-top: 40vh}
+  .claimButton {width: 149px;height: 50px;padding: 14px 28px 14px 29px}
+  .header {font-size: 18px;font-weight: 600;line-height: 1.44;color: #0d0d0d;margin: 20px auto 10px;height: 50px}
+  .itemDataStyle{margin-right: 32px;margin-bottom: 40px}
+  .headtextbelowicon {font-size: 16px;font-weight: 500;color: #fff;line-height: 1.56}
+  .Keypropreasons{text-align: left}
+  .Makelifesimpler {font-size: 24px;text-align: left;margin-top: 10px;margin-bottom: 45px}
+  .cardHeading {font-size: 18px;min-height: auto}
+  .cardtext{font-size: 16px}
+  .assetStyle {margin-top: 78px;text-align: center;padding-top: 60px;margin-bottom: 40px}
+}
+@media (max-width: 600px) {
+  .grid {width: 100%;flex-direction: column}
+  
+}

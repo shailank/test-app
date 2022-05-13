@@ -1,0 +1,15 @@
+.profileDetails {margin-bottom: 70px;text-align: center}
+.profilePic {width: 84px;height: 84px;border-radius: 50%;background-color: #d3d3d3;opacity: 0.21;margin: 12px auto}
+.profileText {font-size: 18px;font-weight: bold;text-align: center;color: #1a1a1a; padding-top: 2px; line-height: 1.44;}
+.address {font-size: 16px;font-weight: 500;color: #000}
+.py20 {padding-top: 20px;padding-bottom: 20px}
+.py30 {padding-top: 30px;padding-bottom: 30px}
+.cardButton {border: 1px solid #3857ff;background-color: #3857ff;border-radius: 12px;width: 100%;height: 54px;font-size: 16px;font-weight: 600;color: #fff;margin-top: 50px;margin-bottom: 90px;padding-top: 16px;padding-bottom: 16px}
+.checkEleButton {background-color: #3857ff;border-radius: 12px;width: 100%;height: 54px;font-size: 16px;font-weight: 600;color: #fff;margin-bottom: 10px}
+.linkColor, .terms {font-size: 14px}
+.bottomtext{font-size: 11px;font-weight: 500;line-height: 1.64;letter-spacing: normal;color: #666}
+@media only screen and (max-width: 768px) {
+    .profileDetails {margin: 40px}
+    .crnBottomStyle {position: fixed;bottom: 0;width: 100%;background: #fff;padding: 24px}
+    .crossButton{position: absolute;right: 24px;top: 18px;font-size: 20px;color: #999;cursor: pointer}
+}

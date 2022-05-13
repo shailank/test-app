@@ -1,0 +1,27 @@
+.creditStyle {margin-bottom: 80px;text-align: center}
+.creditStyle p {font-size: 15px;font-weight: bold;color: #ff0049}
+.creditStyle h5 {font-size: 18px;font-weight: bold;color: #1a1a1a;margin-top: 4px;margin-bottom: 2px;line-height: 1.44;}
+.plstyle {padding-left: 4rem;}
+.priceText {font-size: 14px;font-weight: 500;color:#6f6f6f;}
+.price {font-size: 18px;font-weight: bold;color: #1a1a1a;margin-top: 8px}
+.smallText {font-size: 11px;font-weight: 500;color: #707070}
+.textStyle {display: flex;justify-content:space-between;padding: 17px 0px;font-size: 14px;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5}
+.textLeft {font-weight:600;color: #000;}
+.textRight  {font-weight: 600;color: #1a1a1a}
+.lightStyle {font-size: 14px;font-weight: 500;color: #999;padding-bottom: 20px}
+.keyProps {font-size: 14px;font-weight: 500;color: #666;padding-top: 30px;}
+.arrow {padding-left: 0px;font-size: 16px;font-weight: 500;color: #000;margin-bottom: 20px;}
+.arrow li {background: url("../Images/gray_line.svg") no-repeat 0px 4.5px transparent;list-style: none;margin-top: 18px;padding-left: 24px;line-height: 1.56}
+.securestart{float: left;position: relative;width: 100%;}
+.securestart button{width: 100%; margin: 25px 0px;padding: 16px 0;border-radius: 12px;background-color: #3857ff;}
+@media only screen and (max-width: 768px) {
+    .creditStyle {margin: 42px}
+    .securestart button{position: fixed;bottom: 15px;margin: auto;left: 20px;right: 20px;overflow: hidden; width: 80%;}
+    .securestart{padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .arrow {margin-bottom: 130px;}
+    .keyProps {padding-top: 40px;}
+    .arrow li {margin-top: 30px;}
+    .plstyle {padding-left: 1rem;}
+}

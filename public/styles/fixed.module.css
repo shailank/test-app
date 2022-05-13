@@ -1,0 +1,25 @@
+.pagecontainer{margin: auto;padding: 0 10% 10%;}
+.fixedpage{position: relative;max-width: 33%;margin: auto;display: block;font-size: 14px;font-weight: 500;color: #6f6f6f;}
+.fixedpage h2{text-align: center;margin-bottom: 40px;font-size: 20px;font-weight: 500;line-height: 1.4;color: #000;}
+.fixedpage input{text-align: center;font-size: 32px;width:100%;}
+.fixedpage input::-webkit-outer-spin-button, .fixedpage input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+.fixedpage input[type=checkbox] {-webkit-appearance: none;margin: 0;}
+.creditlimit {margin: 30px 0 25px;border-bottom:1px solid #e6e6e6;}
+.creditlimit p{font-size: 16px;font-weight: 500;}
+.fdlimit {text-align: right;}
+.fdlimit b{font-size: 16px;font-weight: 600;color: #000;}
+.fdlimit h6{font-size: 14px;font-weight: 500;color: #3857ff;margin-top: -10px;margin-bottom: 24px;}
+.fdamount{border: none;border-bottom: 1px solid #ccc;max-width: 100%;outline: none;}
+.check {display: flex;align-items: self-start; margin: 10px 0;}
+.check p{margin: 0 0 10px;font-size: 14px;font-weight: 500;line-height: 1.43;}
+.check  input[type=checkbox] {color: #ccc;}
+.proceed{ width: 100%;margin: 50px 0;text-align: center;}
+.proceed button{background: #3857ff;padding: 16px 136px;font-size: 16px;font-weight: 600;border-radius: 12px;color:#fff;width: 100%;}
+.check a{color: #3857ff}
+.err p {color:red}
+@media screen and (min-width:768px) and (max-width: 1080px){
+    .fixedpage{max-width: 60%;}
+}
+@media screen and (max-width: 767px){
+    .fixedpage{max-width: 90%;}
+}

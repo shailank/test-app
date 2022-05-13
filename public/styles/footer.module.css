@@ -1,0 +1,8 @@
+.footer{margin-top: 150px;margin-bottom: 90px;float:left;position:relative;width:100%;text-align: center}
+.footer p{font-size: 13px;font-weight: 500;color: #8b8b8b}
+.bggrey {width: 408px;height: 51px;margin: 14px 21px 0 20px;font-size: 11px;font-weight: 500;display: inline-block;line-height: 1.64;letter-spacing: normal;text-align: center;color: #8b8b8b}
+.kotak{color: #3857ff;font-weight: 500;font-size: 11px;cursor: pointer;}
+@media only screen and (max-width: 576px) {
+    .footer{margin-top: 115px}
+    .bggrey {width: auto;margin: 0px 48px}
+}

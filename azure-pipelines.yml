@@ -1,0 +1,30 @@
+trigger: 
+  branches:
+    include:
+    - main
+ 
+pool:
+  vmImage: ubuntu-latest
+
+variables: 
+  - group: ECR-ACCESS
+  - name: DOCKER_REPOSITORY
+    value: '979213225527.dkr.ecr.ap-south-1.amazonaws.com/uat-frontend'
+  # imageName: '979213225527.dkr.ecr.ap-south-1.amazonaws.com/demo-project'
+
+steps:
+- script: |
+     aws ecr get-login-password --region $(AWS_REGION) | docker login --username AWS --password-stdin 979213225527.dkr.ecr.ap-south-1.amazonaws.com 
+  displayName: 'Login to AWS ECR'
+  env:
+    AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+    AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY_ID)
+- task: Docker@2
+  displayName: Builds and push an image
+  inputs:
+    repository: $(DOCKER_REPOSITORY)
+    command: buildAndPush
+    Dockerfile: Dockerfile
+    tags: |
+      latest
+      $(Build.BuildNumber)

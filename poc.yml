@@ -1,0 +1,68 @@
+trigger: none
+#  branches:
+#    include:
+#    - main
+ 
+pool:
+  vmImage: Ubuntu Latest
+
+variables:
+- group: AWS-keys
+- group: AWS-reference-keys
+- group: Kotak-ECR-Credentials
+- name: appName
+  value: $(Build.DefinitionName)
+- name: imageName
+  value: $(appName)
+- name: REPO_NAME
+  value: 'creditcardportal-fe'  
+- name:  tag
+  value: '$(appName)-$(Build.BuildId).$(Build.DefinitionVersion)'
+- name:  workingDir
+  value: '/'
+#- name:  APP_NAME
+#  value: $(DOCKER_REPOSITORY_NAME)
+- name: AWS_CREDENTIAL
+  value: 'Kotak-ECR-Credentials'
+- name:  DOCKER_BUILDKIT
+  value: 1
+- name:  DOCKER_REPOSITORY
+  value: '$(AWS_ACCOUNT_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/$(REPO_NAME)'
+
+stages:
+- stage: Build
+  displayName: Build code
+  jobs:
+  - job: Build
+    #displayName: Build
+    #aws ecr get-login-password --region $(AWS_REGION) | docker login --username AWS --password-stdin $(AWS_ACCOUNT_ID).dkr.ecr.ap-south-1.amazonaws.com
+    steps:
+    - script: |
+        docker login -u AWS https://$(AWS_ACCOUNT_ID).dkr.ecr.$(AWS_REGION).amazonaws.com -p $(aws ecr get-login-password --region $(AWS_REGION))
+      displayName: 'Login to AWS ECR'
+      env:
+        AWS_DEFAULT_REGION: $(AWS_DEFAULT_REGION)
+        AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+        AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
+   
+    - task: Docker@2
+      displayName: Builds and push an image
+      inputs:
+        repository: $(DOCKER_REPOSITORY)
+        command: buildAndPush
+        Dockerfile: Dockerfile
+        tags: |
+          $(tag)
+
+    - task: qetza.replacetokens.replacetokens-task.replacetokens@5
+      displayName: 'Replace tokens in value-template-svc.yaml'
+      inputs:
+        targetFiles: 'value-template-svc.yaml'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact: yaml'
+      inputs:
+        PathtoPublish: 'value-template-svc.yaml'
+        ArtifactName: yaml
+#          latest
+#         $(Build.BuildNumber)

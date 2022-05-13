@@ -1,0 +1,8 @@
+.loaderStyle {text-align: center}
+.loaderStyle p {margin-top: 120px;margin-bottom: 60px;font-size: 14px;font-weight: 500;color: #666;line-height: 1.67}
+.loaderStyle img {width: 1.5rem;animation: loader 1.5s infinite}
+@keyframes loader {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.5);opacity: 1}
+    100% {transform: scale(1);opacity: 0.6}
+  }
